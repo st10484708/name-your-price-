@@ -1,0 +1,143 @@
+<<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Income Input -->
+    <EditText
+        android:id="@+id/incomeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your income"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Expense Inputs (Name + Amount) -->
+    <TextView android:text="Enter Expenses:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Expense 1 -->
+    <EditText
+        android:id="@+id/expenseName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name 1 (e.g. Food)" />
+    <EditText
+        android:id="@+id/expenseAmount1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/expenseFeedback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <!-- Expense 2 -->
+    <EditText
+        android:id="@+id/expenseName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name 2 (e.g. Entertainment)" />
+    <EditText
+        android:id="@+id/expenseAmount2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/expenseFeedback2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <!-- Expense 3 -->
+    <EditText
+        android:id="@+id/expenseName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name 3 (e.g. Bills)" />
+    <EditText
+        android:id="@+id/expenseAmount3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/expenseFeedback3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <!-- Expense 4 -->
+    <EditText
+        android:id="@+id/expenseName4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name 4 (e.g. Transport)" />
+    <EditText
+        android:id="@+id/expenseAmount4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/expenseFeedback4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Balance"
+        android:layout_marginTop="20dp" />
+
+    <!-- Results -->
+    <TextView
+        android:id="@+id/totalIncomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/totalExpenseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Feedback -->
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
+</ScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
