@@ -1,143 +1,162 @@
-<<?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <!-- Income Input -->
+    <!-- Income -->
+
+    <!-- Expenses -->
+    <!-- Expense 1 -->
     <EditText
         android:id="@+id/incomeInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your income"
+        android:hint="@string/enter_your_income"
         android:inputType="numberDecimal"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
 
-    <!-- Expense Inputs (Name + Amount) -->
-    <TextView android:text="Enter Expenses:"
+    <TextView
+        android:id="@+id/totalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Total Income:"
         android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        tools:ignore="HardcodedText" />
 
-    <!-- Expense 1 -->
     <EditText
         android:id="@+id/expenseName1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Expense Name 1 (e.g. Food)" />
+        android:hint="@string/expense_1_category_e_g_food"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <!-- Expense 2 -->
+
     <EditText
         android:id="@+id/expenseAmount1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount"
-        android:inputType="numberDecimal" />
-    <TextView
-        android:id="@+id/expenseFeedback1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000" />
+        android:autoText="true"
+        android:hint="@string/expense_1_amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,Deprecated,VisualLintTextFieldSize" />
 
-    <!-- Expense 2 -->
     <EditText
         android:id="@+id/expenseName2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Expense Name 2 (e.g. Entertainment)" />
+        android:hint="@string/expense_2_category_e_g_bills"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/expenseAmount2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount"
-        android:inputType="numberDecimal" />
-    <TextView
-        android:id="@+id/expenseFeedback2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000" />
+        android:hint="@string/expense_2_amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
 
     <!-- Expense 3 -->
+
     <EditText
         android:id="@+id/expenseName3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Expense Name 3 (e.g. Bills)" />
+        android:hint="@string/expense_3_category_e_g_entertainment"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/expenseAmount3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount"
-        android:inputType="numberDecimal" />
-    <TextView
-        android:id="@+id/expenseFeedback3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000" />
+        android:hint="@string/expense_3_amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
 
     <!-- Expense 4 -->
+
     <EditText
         android:id="@+id/expenseName4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Expense Name 4 (e.g. Transport)" />
+        android:hint="@string/expense_4_category_e_g_transport"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
     <EditText
         android:id="@+id/expenseAmount4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount"
-        android:inputType="numberDecimal" />
-    <TextView
-        android:id="@+id/expenseFeedback4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000" />
+        android:hint="@string/expense_4_amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
 
     <!-- Calculate Button -->
+
     <Button
         android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate_balance" />
+
+    <!-- Output Fields -->
+
+    <TextView
+        android:id="@+id/balance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate Balance"
-        android:layout_marginTop="20dp" />
-
-    <!-- Results -->
-    <TextView
-        android:id="@+id/totalIncomeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:id="@+id/totalExpenseText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:height="26dp"
+        android:text="@string/balance"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/balanceText"
-        android:layout_width="wrap_content"
+        android:id="@+id/balanceFeedback"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:height="26dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/totalExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="26dp"
+        android:text="@string/total_expenses"
         android:textStyle="bold" />
 
-    <!-- Feedback -->
     <TextView
-        android:id="@+id/feedbackText"
-        android:layout_width="wrap_content"
+        android:id="@+id/expenseFeedback"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp" />
+        android:height="26dp"
+        android:text="" />
+
 </LinearLayout>
-</ScrollView>
-
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>

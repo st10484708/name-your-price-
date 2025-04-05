@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">nameYour_price</string>
+    <string name="balance">Balance:</string>
+    <string name="expense_1_amount">Expense 1 Amount</string>
+    <string name="calculate_balance">Calculate Balance</string>
+    <string name="expense_2_amount">Expense 2 Amount</string>
+    <string name="expense_3_amount">Expense 3 Amount</string>
+    <string name="expense_4_amount">Expense 4 Amount</string>
+    <string name="expense_1_category_e_g_food">Expense 1 Category (e.g., Food)</string>
+    <string name="expense_2_category_e_g_bills">Expense 2 Category (e.g., Bills)</string>
+    <string name="expense_3_category_e_g_entertainment">Expense 3 Category (e.g., Entertainment)</string>
+    <string name="expense_4_category_e_g_transport">Expense 4 Category (e.g., Transport)</string>
+    <string name="enter_your_income">Enter your income</string>
+    <string name="total_expenses">Total Expenses:</string>
 </resources>
